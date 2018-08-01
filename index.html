@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<style type="text/css">
+.form-style-7{
+    max-width:400px;
+    margin:50px auto;
+    background:#fff;
+    border-radius:2px;
+    padding:20px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+.form-style-7 h1{
+    display: block;
+    text-align: center;
+    padding: 0;
+    margin: 0px 0px 20px 0px;
+    color: #5C5C5C;
+    font-size:x-large;
+}
+.form-style-7 ul{
+    list-style:none;
+    padding:0;
+    margin:0;   
+}
+.form-style-7 li{
+    display: block;
+    padding: 9px;
+    border:1px solid #DDDDDD;
+    margin-bottom: 30px;
+    border-radius: 3px;
+}
+.form-style-7 li:last-child{
+    border:none;
+    margin-bottom: 0px;
+    text-align: center;
+}
+.form-style-7 li > label{
+    display: block;
+    float: left;
+    margin-top: -19px;
+    background: #FFFFFF;
+    height: 14px;
+	font-weight: bold;
+    padding: 2px 5px 2px 5px;
+    color: #054C11;
+    font-size: 14px;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.form-style-7 input[type="text"],
+.form-style-7 input[type="date"],
+.form-style-7 input[type="datetime"],
+.form-style-7 input[type="email"],
+.form-style-7 input[type="number"],
+.form-style-7 input[type="search"],
+.form-style-7 input[type="time"],
+.form-style-7 input[type="url"],
+.form-style-7 input[type="password"],
+.form-style-7 input[type="tel"],
+.form-style-7 textarea,
+.form-style-7 select 
+{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 100%;
+    display: block;
+    outline: none;
+    border: none;
+    height: 25px;
+    line-height: 25px;
+    font-size: 16px;
+    padding: 0;
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+.form-style-7 input[type="text"]:focus,
+.form-style-7 input[type="date"]:focus,
+.form-style-7 input[type="datetime"]:focus,
+.form-style-7 input[type="email"]:focus,
+.form-style-7 input[type="number"]:focus,
+.form-style-7 input[type="search"]:focus,
+.form-style-7 input[type="time"]:focus,
+.form-style-7 input[type="url"]:focus,
+.form-style-7 input[type="password"]:focus,
+.form-style-7 input[type="tel"]:focus,
+.form-style-7 textarea:focus,
+.form-style-7 select:focus 
+{
+}
+.form-style-7 li > span{
+    background: #F3F3F3;
+    display: block;
+    padding: 3px;
+    margin: 0 -9px -9px -9px;
+    text-align: center;
+    color: #050202;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+}.form-style-7 li > span2{
+    background: #F3F3F3;
+    display: block;
+    padding: 3px;
+    margin: 0 -9px -9px -9px;
+    text-align: center;
+    color: #050202;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+.form-style-7 textarea{
+    resize:none;
+}
+.form-style-7 input[type="submit"],
+.form-style-7 input[type="button"]{
+    background: #152F9B;
+    border: none;
+    padding: 10px 20px 10px 20px;
+    border-bottom: 3px solid #5994FF;
+    border-radius: 3px;
+    color: #D2E2FF;
+}
+.form-style-7 input[type="reset"],
+.form-style-7 input[type="button"]{
+    background: #9B1515;
+    border: none;
+    padding: 10px 20px 10px 20px;
+    border-bottom: 3px solid #5994FF;
+    border-radius: 3px;
+    color: #D2E2FF;
+}
+.form-style-7 input[type="submit"]:hover,
+.form-style-7 input[type="button"]:hover{
+    background: #6B9FFF;
+    color:#fff;
+}
+.form-style-7 input[type="reset"]:hover,
+.form-style-7 input[type="button"]:hover{
+    background: #6B9FFF;
+    color:#fff;
+
+</style>
+<script type="text/javascript">
+    function confirmPass() {
+        var pass = document.getElementById("pass").value
+        var confPass = document.getElementById("c_pass").value
+        if(pass != confPass) {
+            alert('Wrong confirm password !');
+        }
+    }
+</script>
+<body>
+<form name="myForm" class="form-style-7" action="display.html" method="GET">
+<ul>
+<li>
+    <label for="fname">First Name</label>
+    <input type="text" name="fname" placeholder="Enter your first name here" required>
+</li>
+<li>
+    <label for="lname">Last Name</label>
+    <input type="text" name="lname" placeholder="Enter your last name here" required>
+</li>
+<li>
+    <label for="email">Email</label>
+    <input type="email" name="email" required placeholder="Enter any valid email address" >
+</li>
+<li>
+    <label for="phone">Phone Number</label>
+    <input type="number" name="phone" placeholder="Any 10-digit Home/Cell Phone Number" 
+			min="1000000000" max="9999999999" required>
+</li>
+<li>
+    <label for="address">Address</label>
+    <input type="text" name="address" placeholder="Enter your home address" required>
+</li>
+<li>
+    <label for="education">Education level</label>
+	  <select name="education">
+    <option>(Select Education)</option>
+    <option value="High School">High School</option>
+    <option value="College">College</option>
+    <option value="Graduate">Graduate</option>
+    <option value="Ph.D">Ph.D</option>
+  </select>
+</li>
+<li>
+    <label for="income">Income (yearly)</label>
+  <select name="income">
+    <option>(Select Income)</option>
+    <option value="Less than $50K">Less than $50K</option>
+    <option value="Between $50k-$100k">Between $50k-$100k</option>
+    <option value="Above $100k">Above $100k</option>
+  </select>
+</li>
+<li>
+    <label for="pw">Enter Password</label>
+    <input type="password" name="pw" id="pass" required placeholder="Enter Password">
+</li>
+<li>
+    <label for="pw2">Confirm Password</label>
+    <input type="password" name="pw2" id="c_pass" placeholder="Confirm Password" onblur="confirmPass()" required>
+</li>
+<li>
+	<input type="checkbox" name="terms" required> I have read and agree to the terms page below
+    <span2><a href="terms.html">Terms Page</span2>
+</li>
+<html>
+  <head>
+    <title>reCAPTCHA demo: Simple page</title>
+     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  </head>
+  <body>
+    <form action="?" method="POST">
+      <div class="g-recaptcha" data-sitekey="your_site_key"></div>
+      <br/>
+    </form>
+  </body>
+</html>
+<li>
+	<input type="reset" value="Reset">
+    <input type="submit" value="Register" >
+</li>
+</ul>
+</form>
+</body>
